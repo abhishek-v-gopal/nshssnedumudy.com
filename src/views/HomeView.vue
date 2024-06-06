@@ -42,9 +42,9 @@ This version reduces the word count from 113 to 53 words, cutting it by more tha
       </div>
     </section>
 <!-- course -->
-    <section class="bg-Secondary py-8">
+
       <section class="bg-Secondary dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+  <div class="py-5 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-Primary dark:text-white">Our Team</h2>
           <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
@@ -94,15 +94,18 @@ This version reduces the word count from 113 to 53 words, cutting it by more tha
                   <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                       <a href="#">Lana Byrd</a>
                   </h3>
-                  <span class="text-gray-500 dark:text-gray-400">Marketing & Sale</span>
+                  <!-- <span class="text-gray-500 dark:text-gray-400">Marketing & Sale</span> -->
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Lana drives the technical strategy of the flowbite platform and brand.</p>                  
               </div>
           </div>  
       </div>  
   </div>
 </section>
-    </section>
+    
+<section>
+  <ClubsView />
 
+</section>
 
 
 
@@ -111,42 +114,17 @@ This version reduces the word count from 113 to 53 words, cutting it by more tha
 </template>
 <script>
 import NavBar from '../components/reuse/NavBar.vue'
-// import CourseCard from '../components/CourseCard.vue'
+import ClubsView from '../components/ClubsView.vue'
 
 export default{
     name: 'HomeView',
     components: {
         NavBar,
-        // CourseCard,
+        ClubsView,
     },
     data(){
       return {
-        Courses: [
-          {
-            id:1,
-            name:"Computer Science",
-            description: "We provides one batch with 50 seats.A practical combination of Computer Science, Mathematics,Physics, Chemistry, English and additional language, Malayalam or Hindi can be chosen by the students.",
-            imageUrl: '/assets/illustrations/biologist-animate.svg'
-          },
-          {
-            id:2,
-            name:"Biology Science",
-            description: "We proffer two batch with 100 seats. A worth mixture of Zology, Botony, Physics, Chemistry, Mathematics, English and students can select there additional language from either Malayalam or Hindi (Both are separated as batches).",
-            imageUrl: '/assets/illustrations/biologist-animate.svg'
-          },
-          {
-            id:3,
-            name:"Commerce",
-            description: "We proffer one batch with 50 seats.This course offers a standard combination of Accountancy - Computerised Accounting, Business Studies, Economics, Computer Application, English and student can opt for either Malayalam or Hindi as additional language.",
-            imageUrl: '/assets/illustrations/biologist-animate.svg'
-          },
-          {
-            id:4,
-            name:"Humanities",
-            description: "We proffer one batch with 50 seats.A rare combiination of subjects Gandhian studies,Computer Application, Communicative English, English and student can opt for either Malayalam or Hindi as additional language.",
-            imageUrl: '/assets/illustrations/biologist-animate.svg'
-          },
-        ]
+        
       }
     }
 }
