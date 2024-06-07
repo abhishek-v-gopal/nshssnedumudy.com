@@ -19,6 +19,8 @@ const routes = [
     name: 'staff',
     component: staff
   },
+
+  
   // Add other routes here
 ];
 
