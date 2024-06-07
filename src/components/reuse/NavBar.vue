@@ -22,13 +22,13 @@
         <a href="#" class="block py-2 px-3 text-white bg-Primary rounded md:bg-transparent md:text-Primary md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
       </li>
       <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">About</a>
+        <a href="#course" class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">Course</a>
       </li>
       <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Services</a>
+        <a href="#clubs" class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Clubs</a>
       </li>
       <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Contact</a>
+        <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Contact</a>
       </li>
     </ul>
   </div>

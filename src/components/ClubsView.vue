@@ -7,7 +7,7 @@
                 disableOnInteraction: false,
             }" @swiper="onSwiper" @slideChange="onSlideChange">
 
-            <template v-for="testimonial in testimonials" :key="testimonial.id">
+            <template v-for="Club in Clubs" :key="Club.id">
 
                 <swiper-slide>
 
@@ -30,27 +30,21 @@
                     </div> -->
 
 
-                    <div class="flex flex-col items-center pb-10 ">
+                    <div class="flex flex-col items-center py-24">
 
                         <figure class="max-w-screen-md mx-auto text-center">
-                            <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
-                                <path
-                                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                            </svg>
+                            <h1 class="text-4xl text-Primary font-extrabold pb-4">{{ Club.name }}</h1>
                             <blockquote>
-                                <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"Flowbite is just
-                                    awesome. It contains tons of predesigned components and pages starting from login
-                                    screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                                <p class="text-xl italic font-medium text-gray-900 dark:text-white">{{ Club.text }}</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
-                                <img class="w-6 h-6 rounded-full"
+                                <!-- <img class="w-6 h-6 rounded-full"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                                    alt="profile picture">
+                                    alt="profile picture"> -->
                                 <div
                                     class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">Michael Gough</cite>
-                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at Google</cite>
+                                    <cite class="pe-3 font-medium text-gray-900 dark:text-white">{{ Club.faculty }}</cite>
+                                    <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">Faculty Coordinator</cite>
                                 </div>
                             </figcaption>
                         </figure>
@@ -75,7 +69,7 @@ import 'swiper/scss';
 import 'swiper/scss/autoplay';
 import { Autoplay } from 'swiper/modules';
 
-const BASE_URL = "https://storage.googleapis.com/inovuslabs-cdn.appspot.com";
+// const BASE_URL = "https://storage.googleapis.com/inovuslabs-cdn.appspot.com";
 
 export default {
     name: 'ClubView',
@@ -90,34 +84,30 @@ export default {
     },
     data() {
         return {
-            testimonials: [
+            Clubs: [
                 {
                     id: 1,
-                    name: 'Roji Thomas',
-                    position: 'Nodal Officer',
-                    image: BASE_URL + '/assets/Testimonials/rojithomas.jpg',
-                    text: 'Inovus Labs is a platform for developing entrepreneurial culture in our college. We here are not teaching to see the dreams, but to fulfill them.'
+                    name: 'Souhrida Club',
+                    text: 'Souhrida club an innovative programme launched by the Department of Higher Secondary Education aimed at Adolescent Counselling and Health care also functions in our school. The club conducts various counselling classes for both students and their parents',
+                    faculty: 'Sandhya Karnavar'
                 },
                 {
                     id: 2,
-                    name: 'Jithin Shah M A',
-                    position: 'Founder',
-                    image: BASE_URL + '/assets/Testimonials/jithinshah.jpg',
-                    text: 'We at Inovus Labs not only activate people to their full potential, but also develop a personalized experience that make our collegues feel more at home.'
+                    name: 'Career Guidance Cell',
+                    text: 'Career Guidance Cell: A unit of the Career Guidance Cell of the DHSE functions effectively in the school . The unit arranges classes for the students by experts and motivational speakers aiming at personality development and stress management.It also conducts programmes to guide students to select the right courses and career',
+                    faculty: 'Narayanan Namboothiri K'
                 },
                 {
                     id: 3,
-                    name: 'Arjun Krishna',
-                    position: 'Mentor',
-                    image: BASE_URL + '/assets/Testimonials/arjunkrishna.jpg',
-                    text: 'We encourage our fellows to think out of the box in every sort of activities and promote stupid ideas, as, today\'s stupidity is tomorrow\'s wonder.'
+                    name: 'ASAP',                    
+                    text: 'We have a unit of Additional Skill Acquisition Programme(ASAP) in our school. It focusses on skill development in students there by facilitating their employment placements',
+                    faculty: ''
                 },
                 {
                     id: 4,
-                    name: 'Dr. Thomas George',
-                    position: 'Chairman, LEAD College of Management',
-                    image: BASE_URL + '/assets/Testimonials/thomman.jpg',
-                    text: 'Special Congratulations to team Inovus Labs IEDC of Kristu Jyoti. The students are highly motivated and ambitious.They are open to learn and ready to implement their creativity. The faculty members and college management are highly supportive'
+                    name: 'NSS Unit 52',
+                    text: 'The NSS unit of NSHSS (unit 52) with a total strength of 100 vounteers under the leadership of a programme officer flourishes actively. The unit is able to uphold the NSS motto Not Me But You by enabling the volunteers to render selfless service through voluntary social service. This unit has also received the best NSS unit award.',
+                    faculty: 'Soumya I'
                 }
             ]
         }
