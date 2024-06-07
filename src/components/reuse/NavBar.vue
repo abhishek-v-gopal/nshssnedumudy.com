@@ -28,20 +28,24 @@
         <ul
           class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
-            <a href="#"
+            <a href="/"
               class="block py-2 px-3 text-white bg-Primary rounded md:bg-transparent md:text-Primary md:p-0 md:dark:text-blue-500"
               aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#course"
+            <a href="/#course"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">Course</a>
           </li>
           <li>
-            <a href="#clubs"
+            <a href="/#clubs"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Clubs</a>
           </li>
           <li>
-            <a href="#contact"
+            <a href="/staff"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">Staff</a>
+          </li>
+          <li>
+            <a href="/#contact"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Contact</a>
           </li>
         </ul>
