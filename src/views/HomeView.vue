@@ -122,7 +122,7 @@
           </div>
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-              <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/illustrations/commerce.svg"
+              <img class="w-auto h-72  rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/illustrations/commerce.svg"
                 alt="Michael Avatar">
             </a>
             <div class="p-5">
