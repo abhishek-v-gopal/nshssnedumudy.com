@@ -84,7 +84,7 @@
     </section>
     <!-- course -->
 
-    <section id="course" class="bg-Secondary dark:bg-gray-900">
+    <section id="course" class="bg-Secondary  dark:bg-gray-900">
       <div class="py-5 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-Primary dark:text-white">Our Course</h2>
@@ -92,9 +92,10 @@
             diverse combination of subjects.</p>
         </div>
         <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+          <!-- first subject -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-              <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+              <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce"
                 src="/assets/illustrations/biologist-animate.svg" alt="Bonnie Avatar">
             </a>
             <div class="p-5">
@@ -106,9 +107,10 @@
                 subjects.</p>
             </div>
           </div>
+          <!-- Second Subject -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-              <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+              <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce"
                 src="/assets/illustrations/typing-animate.svg" alt="Jese Avatar">
             </a>
             <div class="p-5">
@@ -120,9 +122,10 @@
                 subjects.</p>
             </div>
           </div>
+          <!-- Third subject -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-              <img class="w-auto h-72  rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/illustrations/commerce.svg"
+              <img class="w-auto h-72  rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce" src="/assets/illustrations/commerce.svg"
                 alt="Michael Avatar">
             </a>
             <div class="p-5">
@@ -134,9 +137,10 @@
                 commerce subject combination.</p>
             </div>
           </div>
+          <!-- fourth subjects -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-              <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/assets/illustrations/humanities.svg"
+              <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce" src="/assets/illustrations/humanities.svg"
                 alt="Sofia Avatar">
             </a>
             <div class="p-5">
@@ -238,7 +242,7 @@
                         <div class="mb-6">
                             <div class="mx-0 mb-1 sm:mb-4">
                                 <div class="mx-0 mb-1 sm:mb-4">
-                                    <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-Primary py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name">
+                                    <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-Primary py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0 " name="name">
                                 </div>
                                 <div class="mx-0 mb-1 sm:mb-4">
                                     <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-Primary py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email">
