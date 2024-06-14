@@ -94,11 +94,13 @@
         <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <!-- first subject -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
               <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce"
                 src="/assets/illustrations/biologist-animate.svg" alt="Bonnie Avatar">
+            </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Biology Science
+                <a href="#">Biology Science</a>
               </h3>
               <!-- <span class="text-gray-500 dark:text-gray-400">CEO & Web Developer</span> -->
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a mix of science
@@ -107,11 +109,13 @@
           </div>
           <!-- Second Subject -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
               <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce"
                 src="/assets/illustrations/typing-animate.svg" alt="Jese Avatar">
+            </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Computer Science
+                <a href="#">Computer Science</a>
               </h3>
               <!-- <span class="text-gray-500 dark:text-gray-400">CTO</span> -->
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a mix of science
@@ -120,11 +124,13 @@
           </div>
           <!-- Third subject -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
               <img class="w-auto h-72  rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce" src="/assets/illustrations/commerce.svg"
                 alt="Michael Avatar">
+            </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Commerce
+                <a href="#">Commerce</a>
               </h3>
               <!-- <span class="text-gray-500 dark:text-gray-400">Senior Front-end Developer</span> -->
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a standard
@@ -133,11 +139,13 @@
           </div>
           <!-- fourth subjects -->
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
               <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg  hover:animate-bounce" src="/assets/illustrations/humanities.svg"
                 alt="Sofia Avatar">
+            </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Humanities
+                <a href="#">Humanities</a>
               </h3>
               <!-- <span class="text-gray-500 dark:text-gray-400">Marketing & Sale</span> -->
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a rare subject
