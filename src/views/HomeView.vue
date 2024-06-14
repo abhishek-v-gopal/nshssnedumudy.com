@@ -103,7 +103,7 @@
                 <a>Biology Science</a>
               </h3>
               <!-- <span class="text-gray-500 dark:text-gray-400">CEO & Web Developer</span> -->
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a mix of science
+              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 100 seats with a mix of science
                 subjects.</p>
             </div>
           </div>
