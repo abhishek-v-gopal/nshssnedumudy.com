@@ -11,11 +11,11 @@
                 <span class="sr-only">Close modal</span>
             </button>
             <div class="dark:bg-green-900 p-2 flex items-center justify-center mx-auto mb-3.5">
-                <h1 class="text-white font-bold">Importent News</h1>
+                <h1 class="text-white font-bold">Important News</h1>
             </div>
             <!-- <p class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Successfully removed product.</p> -->
             <marquee behavior="scroll" direction="up" scrollamount="2" class="text-center">
-              <p class="text-white">Addmission started for 2024-2025 academic year. For more details contact the office directly or contact the number given below
+              <p class="text-white">Admission started for 2024-2025 academic year. For more details contact the office directly or contact the number given below
               </p>
               <hr>
               <p class="text-white">Bus service is provided for the students from school to Alappuzha town
@@ -71,7 +71,7 @@
                   d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>
             </a>
-            <a href="/"
+            <a href="/history"
               class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-Primary rounded border border-Primary hover:bg-Primary hover:text-white">
               Learn more
             </a>
