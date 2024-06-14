@@ -21,7 +21,7 @@
               <p class="text-white">Bus service is provided for the students from school to Alappuzha town
               </p>
               <hr>
-              <p class="text-white">2nd allotment will be published on or before 30th june 2023
+              <p class="text-white">Third allotment will be published on 19/06/2024
               </p>
               <hr>
             </marquee>
