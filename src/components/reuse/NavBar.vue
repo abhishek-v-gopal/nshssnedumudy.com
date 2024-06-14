@@ -33,11 +33,11 @@
               aria-current="page">Home</a>
           </li>
           <li>
-            <a href="/#course"
+            <a href="#course"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">Course</a>
           </li>
           <li>
-            <a href="/#clubs"
+            <a href="#clubs"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Clubs</a>
           </li>
           <li>
@@ -45,7 +45,7 @@
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">Staff</a>
           </li>
           <li>
-            <a href="/#contact"
+            <a href="#contact"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Contact</a>
           </li>
         </ul>
