@@ -17,6 +17,14 @@ export default{
     data(){
         return{
             staffs: [
+            {
+                    id: 0,
+                    name: "Dr. K Gopakumar",
+                    position: "School Manager",
+                    image: "/assets/staff/Gopakumar.jpg",
+                    subject: "Commerce"
+
+                },
                 {
                     id: 1,
                     name: "Rajesh J",
