@@ -5,8 +5,9 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="https://nshssnedumudy.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="/assets/Logo.png" class="h-8" alt="Flowbite Logo">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-Primary">NS
-          HSS</span>
+        <img src="/assets/Group 4.png" class="h-8" alt="Flowbite Logo">
+        <!-- <span class="self-center text-2xl font-semibold  font-serif	whitespace-nowrap dark:text-white hover:text-Primary">NS
+          HSS</span> -->
       </a>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <a
@@ -33,11 +34,11 @@
               aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#course"
+            <a href="/#course"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">Course</a>
           </li>
           <li>
-            <a href="#clubs"
+            <a href="/#clubs"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Clubs</a>
           </li>
           <li>
@@ -45,7 +46,7 @@
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-Primary md:dark:hover:bg-transparent dark:border-Primary">Staff</a>
           </li>
           <li>
-            <a href="#contact"
+            <a href="/#contact"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-Primary md:hover:bg-transparent md:hover:text-Primary md:p-0 md:dark:hover:text-Primary dark:text-white dark:hover:bg-Primary dark:hover:text-white md:dark:hover:bg-transparent dark:border-Primary">Contact</a>
           </li>
         </ul>
