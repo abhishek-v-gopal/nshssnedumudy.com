@@ -15,15 +15,10 @@
             </div>
             <!-- <p class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Successfully removed product.</p> -->
             <marquee behavior="scroll" direction="up" scrollamount="2" class="text-center">
-              <p class="text-white">Admission started for 2024-2025 academic year. For more details contact the office directly or contact the number given below
-              </p>
-              <hr>
-              <p class="text-white">Bus service is provided for the students from school to Alappuzha town
-              </p>
-              <hr>
-              <p class="text-white">Third allotment will be published on 19/06/2024
-              </p>
-              <hr>
+              <template v-for="news in News">                
+                <p class="text-white">{{ news }}</p>
+                <hr>
+              </template>
             </marquee>
         </div>
     </div>
@@ -282,7 +277,12 @@ export default {
   },
   data() {
     return {
-      showModal: false
+      showModal: false,
+      News: [
+        "Admission started for 2024-2025 academic year. For more details contact the office directly or contact the number given below",
+        "Bus service is provided for the students from school to Alappuzha town",
+        "Third allotment will be published on 19/06/2024",
+      ]
     }
   },
   mounted() {
