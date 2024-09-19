@@ -26,7 +26,7 @@
         
       
     </template>
-<!-- main section -->
+<!-- main section --> 
     <section>
       <div
         class="flex flex-col lg:flex-row w-full mx-auto max-w-screen-xl p-4 items-center justify-center lg:py-4 mt-12 ">

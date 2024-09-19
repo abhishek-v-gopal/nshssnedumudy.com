@@ -32,7 +32,7 @@
 
                     <div class="flex flex-col items-center py-24">
 
-                        <figure class="max-w-screen-md mx-auto text-center">
+                        <figure class="px-3 md:max-w-screen-md  mx-auto text-center">
                             <h1 class="text-4xl text-Primary font-extrabold pb-4">{{ Club.name }}</h1>
                             <blockquote>
                                 <p class="text-xl italic font-medium text-gray-900 dark:text-white">{{ Club.text }}</p>
