@@ -33,7 +33,7 @@
         <div class="mx-auto max-w-screen-xl text-left w-full lg:w-2/3 py-4 lg:py-20">
           <h1 class="mb-4 text-3xl font-bold text-Primary md:text-5xl lg:text-6xl">Nair Samajam Higher Secondary School
           </h1>
-          <p class="mb-8 text-lg font-light text-secondary lg:text-xl">Nair Samajam Higher Secondary School in Nedumudy,
+          <p class="mb-8 text-lg font-light text-secondary lg:text-xl">NS HSS in Nedumudy,
             run by Kottaram Devaswom, is a leading Alappuzha school. Since 1998, its Higher Secondary wing has achieved
             over 90% pass rates and many A+ grades in HSE exams, thanks to dedicated staff, enthusiastic students, and
             strong management.</p>
