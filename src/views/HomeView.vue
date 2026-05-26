@@ -2,29 +2,63 @@
   <div class=" md:mt-1 mt-12">
     <NavBar />
     <template v-if="showModal">
-      <div class="bg-gray-900 h-screen bg-opacity-35	 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 pt-24 flex justify-end items-left w-full md:inset-0 h-modal md:h-full">
-    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-        <!-- Modal content -->
-        <div class="relative p-4 text-center bg-Primary bg-opacity-95 rounded-lg shadow dark:bg-gray-800 sm:p-5">
-            <button type="button" @click="showModal = false" class="text-gray-400 absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
-                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                <span class="sr-only">Close modal</span>
-            </button>
-            <div class="dark:bg-green-900 p-2 flex items-center justify-center mx-auto mb-3.5">
-                <h1 class="text-white font-bold">Important News</h1>
+      <div class="fixed inset-0 z-50 flex items-end justify-center bg-gray-900/40 p-3 sm:items-end sm:justify-end sm:p-6">
+        <div class="w-full max-w-lg rounded-2xl bg-white shadow-2xl ring-1 ring-black/5 sm:max-w-md">
+          <div class="flex items-start justify-between gap-3 rounded-t-2xl bg-Primary px-4 py-4 sm:gap-4 sm:px-5">
+            <div>
+              <p class="text-[10px] font-semibold uppercase tracking-[0.25em] text-white/70 sm:text-xs sm:tracking-[0.3em]">School update</p>
+              <h1 class="mt-1 text-xl font-bold text-white sm:text-2xl">Proud achievement</h1>
             </div>
-            <!-- <p class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Successfully removed product.</p> -->
-            <marquee behavior="scroll" direction="up" scrollamount="2" class="text-center">
-              <template v-for="news in News">                
-                <p class="text-white">{{ news }}</p>
-                <hr>
-              </template>
-            </marquee>
+            <button
+              type="button"
+              @click="closeCelebration"
+              class="rounded-full p-2 text-white/80 transition hover:bg-white/10 hover:text-white"
+            >
+              <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Close popup</span>
+            </button>
+          </div>
+
+          <div class="px-4 py-4 sm:px-5 sm:py-5">
+            <div class="grid gap-3 sm:grid-cols-2">
+              <div class="rounded-xl bg-Secondary p-3 text-center sm:p-4">
+                <p class="text-xs font-medium text-gray-600 sm:text-sm">+2 exam result</p>
+                <p class="mt-2 text-2xl font-extrabold text-Primary sm:text-3xl">93%</p>
+                <p class="mt-1 text-sm text-gray-500">Pass percentage</p>
+              </div>
+              <div class="rounded-xl bg-Secondary p-3 text-center sm:p-4">
+                <p class="text-xs font-medium text-gray-600 sm:text-sm">Kuttanad</p>
+                <p class="mt-2 text-2xl font-extrabold text-Primary sm:text-3xl">1st</p>
+                <p class="mt-1 text-sm text-gray-500">Position in the area</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-sm leading-6 text-gray-600 sm:text-[15px]">
+              We are proud to share that our Higher Secondary students achieved a 93% pass rate in the +2 examination and secured first position in Kuttanad and 6th position in the district. This remarkable achievement reflects the dedication of our students and the unwavering support of our staff and management.
+            </p>
+
+            <div class="mt-4 rounded-xl border border-Primary/20 bg-Secondary p-3 sm:p-4">
+              <p class="text-sm font-semibold text-Primary">Admission details 2026-2027</p>
+              <ul class="mt-2 space-y-2 text-sm leading-6 text-gray-600 sm:text-[15px]">
+                <li>Contact the school office for seat availability and course details.</li>
+                <li>Call <a href="tel:+919447506088" class="text-Primary hover:underline">+91 94475 06088</a> for admission enquiries.<b> school code: 04032</b></li>
+              </ul>
+            </div>
+
+            <div class="mt-5 flex justify-end">
+              <button
+                type="button"
+                @click="closeCelebration"
+                class="inline-flex items-center rounded-full bg-Primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-secondary sm:px-5"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-        
-      
+      </div>
     </template>
 <!-- main section --> 
     <section>
@@ -35,7 +69,7 @@
           </h1>
           <p class="mb-8 text-lg font-light text-secondary lg:text-xl">NS HSS in Nedumudy,
             run by Kottaram Devaswom, is a leading Alappuzha school. Since 1998, its Higher Secondary wing has achieved
-            over 90% pass rates and many A+ grades in HSE exams, thanks to dedicated staff, enthusiastic students, and
+            over 93% pass rates and many A+ grades in HSE exams, thanks to dedicated staff, enthusiastic students, and
             strong management.</p>
           <!-- count -->
           <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
@@ -267,6 +301,8 @@ import NavBar from '../components/reuse/NavBar.vue'
 import ClubsView from '../components/ClubsView.vue'
 import Footer from '../components/reuse/Footer.vue'
 
+const festiveScriptUrl = 'https://cdn.jsdelivr.net/npm/festive-js/core.min.js'
+
 
 export default {
   name: 'HomeView',
@@ -278,15 +314,187 @@ export default {
   data() {
     return {
       showModal: false,
-      News: [
-        "We are proud to announce that our school has achieved a remarkable 93% pass rate in the +2 examination,And first in the kuttand",
-        "Admission started for 2026-2027 academic year. For more details contact the office directly or call on 919447506088",
-        "Bus service is provided for the students from school to Alappuzha town",
-      ]
+      festiveScriptLoaded: false,
+      festiveScriptPromise: null,
     }
   },
-  mounted() {
+  methods: {
+    loadFestiveScript() {
+      if (this.festiveScriptLoaded) {
+        return Promise.resolve()
+      }
+
+      if (this.festiveScriptPromise) {
+        return this.festiveScriptPromise
+      }
+
+      this.festiveScriptPromise = new Promise((resolve, reject) => {
+        const existingScript = document.querySelector(`script[src="${festiveScriptUrl}"]`)
+
+        if (existingScript) {
+          this.festiveScriptLoaded = true
+          resolve()
+          return
+        }
+
+        const script = document.createElement('script')
+        script.src = festiveScriptUrl
+        script.async = true
+        script.onload = () => {
+          this.festiveScriptLoaded = true
+          resolve()
+        }
+        script.onerror = () => {
+          reject(new Error('Unable to load festive-js'))
+        }
+        document.head.appendChild(script)
+      })
+
+      return this.festiveScriptPromise
+    },
+    registerCrackerTheme() {
+      if (!window.Festive) {
+        return
+      }
+
+      if (window.Festive.getRegisteredThemes().some((theme) => theme.key === 'cracker')) {
+        return
+      }
+
+      window.Festive.registerTheme({
+        key: 'cracker',
+        name: 'Cracker Burst',
+        triggers: [{ type: 'always' }],
+        apply(container) {
+          const particles = []
+
+          const styleId = 'cracker-theme-styles'
+          if (!document.getElementById(styleId)) {
+            const style = document.createElement('style')
+            style.id = styleId
+            style.textContent = `
+              @keyframes cracker-pulse-left {
+                0%, 100% { transform: translateY(-50%) scale(0.85) rotate(-8deg); }
+                45% { transform: translateY(-50%) scale(1) rotate(4deg); }
+                60% { transform: translateY(-50%) scale(1.08) rotate(8deg); }
+              }
+
+              @keyframes cracker-pulse-right {
+                0%, 100% { transform: translateY(-50%) scale(0.85) rotate(8deg); }
+                45% { transform: translateY(-50%) scale(1) rotate(-4deg); }
+                60% { transform: translateY(-50%) scale(1.08) rotate(-8deg); }
+              }
+
+              @keyframes cracker-burst-left {
+                0% { transform: translate(0, -50%) scale(0.2); opacity: 0; }
+                12% { opacity: 1; }
+                60% { transform: translate(18vw, -60%) scale(1); opacity: 1; }
+                100% { transform: translate(28vw, -80%) scale(0.7); opacity: 0; }
+              }
+
+              @keyframes cracker-burst-right {
+                0% { transform: translate(0, -50%) scale(0.2); opacity: 0; }
+                12% { opacity: 1; }
+                60% { transform: translate(-18vw, -60%) scale(1); opacity: 1; }
+                100% { transform: translate(-28vw, -80%) scale(0.7); opacity: 0; }
+              }
+
+              @keyframes cracker-spark {
+                0% { transform: translate(-50%, -50%) scale(0.2); opacity: 0; }
+                15% { opacity: 1; }
+                55% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+                100% { transform: translate(-50%, -50%) scale(0.45); opacity: 0; }
+              }
+            `
+            document.head.appendChild(style)
+          }
+
+          const createSidePopper = (side, top, delay) => {
+            const popper = document.createElement('div')
+            popper.textContent = '🎉'
+            popper.style.cssText = [
+              'position: fixed',
+              'pointer-events: none',
+              'z-index: 2147483647',
+              `top: ${top}%`,
+              side === 'left' ? 'left: 0' : 'right: 0',
+              'font-size: 36px',
+              'filter: drop-shadow(0 0 12px rgba(255, 140, 0, 0.9))',
+              `animation: ${side === 'left' ? 'cracker-pulse-left' : 'cracker-pulse-right'} 2.8s ease-in-out ${delay}s infinite`,
+            ].join('; ')
+            container.appendChild(popper)
+            particles.push(popper)
+
+            const burstCount = 6
+            for (let index = 0; index < burstCount; index += 1) {
+              const spark = document.createElement('span')
+              spark.textContent = index % 2 === 0 ? '✦' : '•'
+              const offsetY = (index - 2.5) * 9
+              const scale = 12 + index * 2
+
+              spark.style.cssText = [
+                'position: fixed',
+                'pointer-events: none',
+                'z-index: 2147483647',
+                side === 'left' ? 'left: 2.2rem' : 'right: 2.2rem',
+                `top: calc(${top}% + ${offsetY}px)`,
+                'font-size: 16px',
+                'color: #ffd54f',
+                'text-shadow: 0 0 10px rgba(255, 213, 79, 0.9)',
+                `animation: ${side === 'left' ? 'cracker-burst-left' : 'cracker-burst-right'} 1.6s ease-out ${delay + index * 0.05}s infinite`,
+                `transform: translate(0, -50%) scale(${scale / 18})`,
+              ].join('; ')
+
+              container.appendChild(spark)
+              particles.push(spark)
+            }
+          }
+
+          createSidePopper('left', 18, 0)
+          createSidePopper('left', 48, 0.8)
+          createSidePopper('left', 78, 1.6)
+
+          createSidePopper('right', 24, 0.3)
+          createSidePopper('right', 56, 1.1)
+          createSidePopper('right', 84, 1.9)
+
+          return () => {
+            particles.forEach((particle) => particle.remove())
+            const style = document.getElementById(styleId)
+            if (style) {
+              style.remove()
+            }
+          }
+        },
+      })
+    },
+    openCelebration() {
+      if (!window.Festive) {
+        return
+      }
+
+      this.registerCrackerTheme()
+
+      window.Festive.init({
+        forceTheme: 'cracker',
+      })
+    },
+    closeCelebration() {
+      this.showModal = false
+      if (window.Festive) {
+        window.Festive.destroy()
+      }
+    },
+  },
+  async mounted() {
     this.showModal = true;
+    await this.loadFestiveScript()
+    this.openCelebration()
+  },
+  beforeUnmount() {
+    if (window.Festive) {
+      window.Festive.destroy()
+    }
   }
 }
 </script>
