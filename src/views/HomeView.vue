@@ -279,9 +279,9 @@ export default {
     return {
       showModal: false,
       News: [
-        "Admission started for 2024-2025 academic year. For more details contact the office directly or contact the number given below",
+        "We are proud to announce that our school has achieved a remarkable 93% pass rate in the +2 examination,And first in the kuttand",
+        "Admission started for 2026-2027 academic year. For more details contact the office directly or call on 919447506088",
         "Bus service is provided for the students from school to Alappuzha town",
-        "Third allotment will be published on 19/06/2024",
       ]
     }
   },

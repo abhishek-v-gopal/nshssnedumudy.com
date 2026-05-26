@@ -3,6 +3,7 @@ import Home from '../views/HomeView.vue';
 import History from '../views/HistoryView.vue';
 import staff from '../views/StaffView.vue';
 
+
 const routes = [
   {
     path: '/',
@@ -14,13 +15,11 @@ const routes = [
     name: 'History',
     component: History
   },
-  {
+  { 
     path: '/staff',
     name: 'staff',
     component: staff
-  },
-
-  
+  },  
   // Add other routes here
 ];
 
