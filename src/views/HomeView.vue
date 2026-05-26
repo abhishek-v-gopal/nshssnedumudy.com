@@ -61,6 +61,7 @@
           </div>
         </div>
       </div>
+      
     </template>
     <template v-if="showAdmissionModal">
       <div class="fixed inset-0 z-50 flex items-center justify-center bg-gray-900/50 p-3 sm:p-6">
