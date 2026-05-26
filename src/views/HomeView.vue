@@ -31,7 +31,7 @@
               <div class="rounded-xl bg-Secondary p-3 text-center sm:p-4">
                 <p class="text-xs font-medium text-gray-600 sm:text-sm">Kuttanad</p>
                 <p class="mt-2 text-2xl font-extrabold text-Primary sm:text-3xl">1st</p>
-                <p class="mt-1 text-sm text-gray-500">Position in the area</p>
+                <p class="mt-1 text-sm text-gray-500">Position</p>
               </div>
             </div>
 
@@ -39,18 +39,64 @@
               We are proud to share that our Higher Secondary students achieved a 93% pass rate in the +2 examination and secured first position in Kuttanad and 6th position in the district. This remarkable achievement reflects the dedication of our students and the unwavering support of our staff and management.
             </p>
 
-            <div class="mt-4 rounded-xl border border-Primary/20 bg-Secondary p-3 sm:p-4">
-              <p class="text-sm font-semibold text-Primary">Admission details 2026-2027</p>
-              <ul class="mt-2 space-y-2 text-sm leading-6 text-gray-600 sm:text-[15px]">
-                <li>Contact the school office for seat availability and course details.</li>
-                <li>Call <a href="tel:+919447506088" class="text-Primary hover:underline">+91 94475 06088</a> for admission enquiries.<b> school code: 04032</b></li>
-              </ul>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <button
+                type="button"
+                @click="showAdmissionModal = true"
+                class="inline-flex items-center rounded-full border border-Primary px-4 py-2 text-sm font-semibold text-Primary transition hover:bg-Primary hover:text-white"
+              >
+                View admission details
+              </button>
             </div>
 
             <div class="mt-5 flex justify-end">
               <button
                 type="button"
                 @click="closeCelebration"
+                class="inline-flex items-center rounded-full bg-Primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-secondary sm:px-5"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template v-if="showAdmissionModal">
+      <div class="fixed inset-0 z-50 flex items-center justify-center bg-gray-900/50 p-3 sm:p-6">
+        <div class="w-full max-w-lg rounded-2xl bg-white shadow-2xl ring-1 ring-black/5 sm:max-w-md">
+          <div class="flex items-start justify-between gap-3 rounded-t-2xl bg-Primary px-4 py-4 sm:gap-4 sm:px-5">
+            <div>
+              <p class="text-[10px] font-semibold uppercase tracking-[0.25em] text-white/70 sm:text-xs sm:tracking-[0.3em]">Admissions</p>
+              <h2 class="mt-1 text-xl font-bold text-white sm:text-2xl">2026-2027 admission details</h2>
+            </div>
+            <button
+              type="button"
+              @click="showAdmissionModal = false"
+              class="rounded-full p-2 text-white/80 transition hover:bg-white/10 hover:text-white"
+            >
+              <svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Close admission popup</span>
+            </button>
+          </div>
+
+          <div class="px-4 py-4 sm:px-5 sm:py-5">
+            <div class="rounded-xl border border-Primary/20 bg-Secondary p-4">
+              <p class="text-sm font-semibold text-Primary">Admission details</p>
+              <ul class="mt-2 space-y-2 text-sm leading-6 text-gray-600 sm:text-[15px]">
+                <li>Admission started for the 2026-2027 academic year.</li>
+                <li>Contact the school office for seat availability and course details.</li>
+                <li>Call <a href="tel:+919447506088" class="text-Primary hover:underline">+91 94475 06088</a> for admission enquiries.</li>
+                <li>School code: <b>04032</b></li>
+              </ul>
+            </div>
+
+            <div class="mt-5 flex justify-end">
+              <button
+                type="button"
+                @click="showAdmissionModal = false"
                 class="inline-flex items-center rounded-full bg-Primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-secondary sm:px-5"
               >
                 Close
@@ -129,11 +175,16 @@
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a>Biology Science</a>
+                <a>Biology Science — Code: 01</a>
               </h3>
-              <!-- <span class="text-gray-500 dark:text-gray-400">CEO & Web Developer</span> -->
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 100 seats with a mix of science
-                subjects.</p>
+              <p class="mt-3 mb-1 font-medium text-gray-700 dark:text-gray-300">Subjects:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mb-4">
+                <li>Biology</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Mathematics</li>
+              </ul>
+              <p class="mt-0 font-light text-gray-500 dark:text-gray-400">We offer 100 seats in the Biology science stream.</p>
             </div>
           </div>
           <!-- Second Subject -->
@@ -144,11 +195,16 @@
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a>Computer Science</a>
+                <a>Computer Science — Code: 05</a>
               </h3>
-              <!-- <span class="text-gray-500 dark:text-gray-400">CTO</span> -->
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a mix of science
-                subjects.</p>
+              <p class="mt-3 mb-1 font-medium text-gray-700 dark:text-gray-300">Subjects:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mb-4">
+                <li>Computer Science</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Mathematics</li>
+              </ul>
+              <p class="mt-0 font-light text-gray-500 dark:text-gray-400">We offer 50 seats in the Computer Science stream.</p>
             </div>
           </div>
           <!-- Third subject -->
@@ -159,11 +215,16 @@
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a>Commerce</a>
+                <a>Commerce — Code: 39</a>
               </h3>
-              <!-- <span class="text-gray-500 dark:text-gray-400">Senior Front-end Developer</span> -->
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a standard
-                commerce subject combination.</p>
+              <p class="mt-3 mb-1 font-medium text-gray-700 dark:text-gray-300">Subjects:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mb-4">
+                <li>Business Studies</li>
+                <li>Accountancy</li>
+                <li>Computer Application</li>
+                <li>Economics</li>
+              </ul>
+              <p class="mt-0 font-light text-gray-500 dark:text-gray-400">We offer 50 seats in the Commerce stream.</p>
             </div>
           </div>
           <!-- fourth subjects -->
@@ -174,11 +235,16 @@
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a>Humanities</a>
+                <a>Humanities — Code: 33</a>
               </h3>
-              <!-- <span class="text-gray-500 dark:text-gray-400">Marketing & Sale</span> -->
-              <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We offer 50 seats with a rare subject
-                combination.</p>
+              <p class="mt-3 mb-1 font-medium text-gray-700 dark:text-gray-300">Subjects:</p>
+              <ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mb-4">
+                <li>Gandhian Studies</li>
+                <li>Economics</li>
+                <li>Computer Application</li>
+                <li>Communicative English</li>
+              </ul>
+              <p class="mt-0 font-light text-gray-500 dark:text-gray-400">We offer 50 seats in the Humanities stream.</p>
             </div>
           </div>
         </div>
@@ -314,6 +380,7 @@ export default {
   data() {
     return {
       showModal: false,
+      showAdmissionModal: false,
       festiveScriptLoaded: false,
       festiveScriptPromise: null,
     }
@@ -481,6 +548,7 @@ export default {
     },
     closeCelebration() {
       this.showModal = false
+      this.showAdmissionModal = false
       if (window.Festive) {
         window.Festive.destroy()
       }
